@@ -13,16 +13,73 @@
         android:layout_marginBottom="100dp"
         android:padding="10dp"
         ssb:line_color="#ccc"
-        ssb:line_weight="4dp"
+        ssb:line_weight="2dp"
         ssb:orientation="horizontal"
-        ssb:segmentCount="4"
+        ssb:segmentCount="5"
         ssb:segmentDrawable="@drawable/bg_dot"
         ssb:touchDrawable="@drawable/bg_move_dot" />
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="@string/next"
-        android:onClick="clickButton"/>
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="linecolor "/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="change line color"
+                android:onClick="changeLineColor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="line weight "/>
+
+            <EditText
+                android:id="@+id/et_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="count "/>
+
+            <EditText
+                android:id="@+id/et_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="5"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:onClick="clickButton"/>
+    </LinearLayout>
+
 </RelativeLayout>

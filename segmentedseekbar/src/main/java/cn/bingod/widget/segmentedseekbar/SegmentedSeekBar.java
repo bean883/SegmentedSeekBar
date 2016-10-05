@@ -122,6 +122,7 @@ public class SegmentedSeekBar extends View {
     /*代码设置属性*/
     public void setSegmentCount(int segmentCount) {
         this.segmentCount = segmentCount;
+        initIndexArray();
         invalidate();
     }
 

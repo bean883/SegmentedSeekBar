@@ -13,7 +13,24 @@
     <cn.bingod.widget.segmentedseekbar.SegmentedSeekBar
         android:id="@+id/ssb"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        ssb:line_color="#ccc"
+        ssb:line_weight="2dp"
+        ssb:orientation="horizontal"
+        ssb:textAlign="top"
+        ssb:text_AccentColor="@color/colorAccent"
+        ssb:text_size="13sp"
+        ssb:textPadding="20dp"
+        ssb:segmentStrings="@array/map_distances"
+        ssb:segmentDrawable="@drawable/bg_dot"
+        ssb:touchDrawable="@drawable/bg_move_dot" />
+
+    <cn.bingod.widget.segmentedseekbar.SegmentedSeekBar
+        android:id="@+id/ssb2"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
         android:padding="0dp"
         ssb:line_color="#ccc"
         ssb:line_weight="2dp"
@@ -21,7 +38,7 @@
         ssb:textAlign="right"
         ssb:text_AccentColor="@color/colorAccent"
         ssb:text_size="13sp"
-        ssb:textPadding="20dp"
+        ssb:textPadding="30dp"
         ssb:segmentStrings="@array/map_distances"
         ssb:segmentDrawable="@drawable/bg_dot"
         ssb:touchDrawable="@drawable/bg_move_dot" />
