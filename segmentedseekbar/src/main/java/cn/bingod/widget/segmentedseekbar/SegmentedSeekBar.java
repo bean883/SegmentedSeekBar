@@ -383,8 +383,8 @@ public class SegmentedSeekBar extends View {
         if (heightMode == MeasureSpec.EXACTLY) {
             height = heightSize;
         } else {
-            int minHeight = segmentDrawableBounds.height() << 1;
-            height = Math.min(touchDrawableBounds.height() << 1, minHeight);
+            int minHeight = segmentDrawableBounds.height();
+            height = Math.max(touchDrawableBounds.height(), minHeight);
             if (hasSegmentTexts()) {
                 int textHeight = getTextHeight(textPaint, segmentTexts[0].toString()) + textPadding;
                 if(textHeight >= (height >> 1)) {
