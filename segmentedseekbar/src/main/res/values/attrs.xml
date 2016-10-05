@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SegmentedSeekBar">
+        <attr name="segmentCount" format="reference|integer" />
+        <attr name="segmentDrawable" format="reference" />
+        <attr name="segmentStrings" format="reference" />
+        <attr name="text_color" format="reference|color" />
+        <attr name="text_AccentColor" format="reference|color" />
+        <attr name="text_size" format="reference|dimension" />
+        <attr name="textPadding" format="reference|dimension" />
+        <attr name="touchDrawable" format="reference" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="textAlign" format="enum">
+            <enum name="top" value="10"/>
+            <enum name="bottom" value="11"/>
+            <enum name="left" value="12"/>
+            <enum name="right" value="13"/>
+        </attr>
+        <attr name="line_color" format="reference|color" />
+        <attr name="line_weight" format="reference|dimension" />
+    </declare-styleable>
+</resources>

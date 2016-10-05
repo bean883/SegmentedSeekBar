@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SegmentedSeekBar</string>
+    <string name="next">next</string>
+</resources>
