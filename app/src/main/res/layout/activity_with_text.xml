@@ -15,16 +15,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="0dp"
-        ssb:line_color="#ccc"
+        ssb:line_color="@color/colorPrimary"
         ssb:line_weight="2dp"
         ssb:orientation="horizontal"
         ssb:textAlign="top"
+        ssb:text_color="@color/colorPrimary"
         ssb:text_AccentColor="@color/colorAccent"
         ssb:text_size="13sp"
         ssb:textPadding="20dp"
         ssb:segmentStrings="@array/map_distances"
-        ssb:segmentDrawable="@drawable/bg_dot"
-        ssb:touchDrawable="@drawable/bg_move_dot" />
+        ssb:segmentDrawable="@drawable/bg_dot2"
+        ssb:touchDrawable="@drawable/bg_move_dot2" />
 
     <cn.bingod.widget.segmentedseekbar.SegmentedSeekBar
         android:id="@+id/ssb2"
@@ -41,5 +42,5 @@
         ssb:textPadding="30dp"
         ssb:segmentStrings="@array/map_distances"
         ssb:segmentDrawable="@drawable/bg_dot"
-        ssb:touchDrawable="@drawable/bg_move_dot" />
+        ssb:touchDrawable="@android:drawable/ic_menu_mylocation" />
 </RelativeLayout>

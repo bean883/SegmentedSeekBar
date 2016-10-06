@@ -123,7 +123,7 @@ public class SegmentedSeekBar extends View {
     public void setSegmentCount(int segmentCount) {
         this.segmentCount = segmentCount;
         initIndexArray();
-        invalidate();
+        setIndex(0);
     }
 
     public void setLineColor(int lineColor) {
