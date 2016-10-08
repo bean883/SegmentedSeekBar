@@ -344,8 +344,8 @@ public class SegmentedSeekBar extends View {
         if (widthMode == MeasureSpec.EXACTLY) {
             width = widthSize;
         } else {
-            int minWidth = segmentDrawableBounds.width() << 1;
-            width = Math.min(touchDrawableBounds.width() << 1, minWidth);
+            int minWidth = segmentDrawableBounds.width();
+            width = Math.max(touchDrawableBounds.width(), minWidth);
             if (segmentTexts != null && segmentTexts.length > 1) {
                 switch (orientation) {
                     case VERTICAL:
@@ -359,10 +359,6 @@ public class SegmentedSeekBar extends View {
                             }
                         }
                         break;
-                }
-            } else {
-                for (int i = 0; i < segmentCount - 1; i++) {
-                    width += segmentDrawableBounds.width();
                 }
             }
             int paddingLeft = getPaddingLeft();
